@@ -1,0 +1,55 @@
+<div class="login-container">
+  <form class="login-form" (submit)="submitForm()">
+    <label for="username">Kullanıcı Adı</label>
+    <input type="text" id="username" name="username" required [(ngModel)]="username">
+
+    <label for="password">Şifre</label>
+    <input type="password" id="password" name="password" required [(ngModel)]="password">
+
+    <button type="submit">Giriş Yap</button>
+  </form>
+</div>
+<style>
+  .login-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 90vh;
+  }
+
+  .login-form {
+    width: 300px;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+
+  .login-form label {
+    display: block;
+    margin-bottom: 5px;
+  }
+
+  .login-form input {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+  }
+
+  .login-form button {
+    width: 100%;
+    padding: 10px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+  }
+
+  .login-form button:hover {
+    background-color: #0056b3;
+  }
+
+</style>
